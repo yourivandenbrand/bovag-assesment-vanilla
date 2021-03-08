@@ -1,0 +1,69 @@
+.vehicle {
+    border: solid 1px #e0e0e0;
+    border-radius: 10px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__content-image {
+        border-radius: 10px;
+        display: block;
+        object-fit: cover;
+
+        width: auto;
+        height: auto;
+    }
+
+    &__content-favorite {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__content-price {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__specs {
+        &--ul {
+            list-style-type: none;
+        }
+        &--ul-left {
+            padding: 0;
+            font-weight: bold;
+        }
+    }
+
+    &__button {
+        border-radius: 10px;
+        font-size: 18px;
+        width: 100%;
+        height: 100%;
+        font-weight: bold;
+        cursor: pointer;
+        min-height: 40px;
+        transition: all 0.3s;
+        &--tel {
+            background-color: white;
+            border: 1px solid #2f80ec;
+            color: #2f80ec;
+        }
+        &--tel:hover {
+            background-color: #f0f0f0;
+        }
+        &--show {
+            border: none;
+            background-color: #2f80ec;
+            color: white;
+        }
+        &--show:hover {
+            background-color: #5e9df0;
+        }
+    }
+}

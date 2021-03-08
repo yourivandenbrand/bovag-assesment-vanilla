@@ -1,0 +1,29 @@
+
+@import './views/overview.scss';
+@import './components/vehicle.scss';
+@import './components/header.scss';
+
+$primary-color: white;
+
+@font-face {
+    font-family: "Exo";
+    src: url("../assets/fonts/Exo/Exo-VariableFont_wght.ttf");
+}
+body {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+button:focus {
+    outline: 0;
+}
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin: 0 auto;
+    font-family: "Exo";
+}

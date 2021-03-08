@@ -1,0 +1,25 @@
+{
+  "name": "bovag-assesment-vanilla-js",
+  "version": "1.0.0",
+  "description": "BOVAG assesment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run clean && parcel public/index.html --out-dir development -p 8080",
+    "build": "rimraf ./dist && parcel build public/*.html --out-dir dist --public-url ./",
+    "clean": "rimraf ./development && rimraf ./.cache"
+  },
+  "author": "Youri van den Brand",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "primeflex": "^2.0.0"
+  }
+}
